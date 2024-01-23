@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.container{
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100%;
+    background-image: url(./img/workspace-1280538_1280.jpg);
+    color: white;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fix;
+}
+
+#isim{
+    font-size: 5rem;
+    padding: 0 1rem;
+    font-family: 'Grape Nuts', cursive;
+    margin-left: 4rem;
+    color: rgb(209, 154, 124);
+    text-shadow: 2px 10px 10px black;
+    max-width: 100%;
+}
+#nav{
+    width: 50%;
+}
+#nav ul{
+    display:flex;
+    justify-content: center;
+    gap: 5rem;
+    list-style: none;
+    font-size: 2rem;
+}
+
+#nav a{
+    text-decoration: none;
+    color: white;
+    transition: transform 1s ease-in-out;
+    min-width: 5px;
+}
+
+#nav a:hover{
+    color: rgb(27, 42, 25);
+    text-shadow: 2px 2px 2px wheat;
+    font-weight: 800;
+}
+.main-container{
+    width: 80vw;
+    height: 60vh;
+    margin-top: 6rem;
+    margin-left: 5rem;
+}
+
+#main-part{
+    width: 90%;
+    font-size: 5rem;
+}
+
+#main-isim{
+    display: flex;
+    justify-content:baseline;
+    gap: 5rem;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+#name{
+    color: rgb(209, 154, 124);
+    text-shadow: 2px 2px 5px black;
+}
+
+#contact{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    font-size: 3rem;
+    width: 75%;
+    margin-top: 8rem;
+}
+
+#contact i{
+    color: rgb(27, 42, 25);
+    text-shadow: 1px 2px 2px rgb(146, 140, 140);
+}
+
+#contact i:hover {
+    color: wheat;
+    text-shadow: 1px 2px 2px black;
+}
+
+.github i{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    padding: 10px;
+    font-size: 4rem;
+    color: rgb(100, 98, 76);
+    text-shadow: 1px 2px 2px rgb(146, 140, 140);
+    z-index: 999;
+}
+
+.github i:hover{
+    color: wheat;
+    text-shadow: 1px 2px 2px black;
+}
+.text{
+    padding: 1.5rem 10rem;
+    background: linear-gradient(to right, #442d13, #16311a);
+    color: wheat;
+}
+
+#about-me{
+    color: rgb(17, 41, 38);
+    font-size: 3rem;
+    letter-spacing: 9px;
+    text-shadow: 2px 3px 3px rgb(5, 4, 4);
+    margin-bottom: 2rem;
+}
+
+#text-about{
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    text-align: justify;
+}
+.container-1{
+    min-height: 78%;
+    /* width: 100vw; */
+    background-image: url(./img/desk-593327_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-1 p{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 30rem;
+    margin-left: 40rem;
+    color: rgb(18, 38, 30);
+}
+
+
+
