@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*! HEADER */
+header{
+    width: 100vw;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background: rgb(47,68,68);
+background: linear-gradient(180deg, rgba(47,68,68,1) 0%, rgba(220,201,160,1) 100%);
+}
+
+header img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    box-shadow: 2px 4px 10px black;
+    margin-left: 2rem;
+    
+}
+
+.header-text{
+    /* border: 1px solid red; */
+    padding: 1rem;
+    margin-right: 5rem;
+    width: 70%;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 1px 2px white;
+}
+
+.slideshow-container {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 33rem;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    
+}
+
+.fade {
+    animation: fade 1.5s ease-in-out infinite;
+}
+
+
+/*! MAİN */
+.main-container{
+    padding: 3rem;
+    position: relative;
+    background-color: rgba(245, 222, 179, 0.211);
+    width: 100vw;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 12rem;
+    left: 3rem;
+    /* border: 1px solid black; */
+    padding:3rem;
+    font-size: 2rem;
+    line-height: 5rem;
+    background-color: rgba(245, 222, 179, 0.118);
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    transition: transform 1s ease-in-out;
+}
+
+nav a:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in;
+}
+
+nav i{
+    font-size: 1.5rem;
+    color: rgb(204, 195, 136);
+    cursor: pointer;
+}
+nav i:hover{
+    color: rgb(115, 90, 21)
+}
+
+section{
+    position: relative;
+    margin-left: 24rem;
+    line-height: 1.5rem;
+    /* border: 1px solid red; */
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+#audio-play{
+    opacity: 0;
+    width: 10%;
+}
+
+#audio-play {
+    max-width: 400px;
+}
+
+/*! FOOTER */
+
+footer{
+    background: rgb(47,68,68);
+background: linear-gradient(90deg, rgba(47,68,68,1) 0%, rgba(220,201,160,1) 80%);
+    text-align: center;
+    padding: 1.5rem;
+}
