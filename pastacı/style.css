@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/*! HEADER */
+
+header {
+    width: 100vw;
+    min-height: 70px;
+    max-height: 200px;
+    background-color: black;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-self: flex-end;
+    width: 80%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    margin-left: 3rem;
+    font-size: 45px;
+    font-weight: 900;
+    width: 20%;
+}
+.tab {
+    /* border: 1px solid red; */
+    position: relative;
+    margin: 5px;
+}
+
+.tab-label {
+    padding: 10px;
+    position: relative;
+}
+
+.tab-content {
+    opacity: 0;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 200%;
+    padding: 10px;
+    box-shadow: 1px 1px 2px white;
+    background-color: white;
+    list-style: none;
+    line-height: 2rem;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+}
+.tab-content li{
+    cursor: pointer;
+}
+
+.tab:hover .tab-content {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+/*! MAİN*/
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding: 8rem 5rem;
+    width: 100vw;
+    position: relative;
+    height: auto;
+}
+
+.text{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 15rem;
+    left: 12rem;
+    opacity: 0;
+}
+.text-1{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 15rem;
+    right: 40rem;
+    opacity: 0;
+}
+.text-2{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 15rem;
+    right: 12rem;
+    opacity: 0;
+}
+.text-3{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 45rem;
+    left: 13rem;
+    opacity: 0;
+}
+.text-4{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 45rem;
+    left: 40rem;
+    opacity: 0;
+}
+.text-5{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 45rem;
+    right: 12rem;
+    opacity: 0;
+}
+.text-6{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 85rem;
+    left: 13rem;
+    opacity: 0;
+}
+.text-7{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 85rem;
+    right: 40rem;
+    opacity: 0;
+}
+.text-8{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 85rem;
+    right: 12rem;
+    opacity: 0;
+}
+.text-9{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 122rem;
+    left: 12rem;
+    opacity: 0;
+}
+.text-10{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 123rem;
+    left: 41rem;
+    opacity: 0;
+}
+.text-11{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 124rem;
+    right: 12rem;
+    opacity: 0;
+}
+
+.image-container img:hover + .text,
+.image-container img:hover + .text-1,
+.image-container img:hover + .text-2,
+.image-container img:hover + .text-3,
+.image-container img:hover + .text-4,
+.image-container img:hover + .text-5,
+.image-container img:hover + .text-6,
+.image-container img:hover + .text-7,
+.image-container img:hover + .text-8,
+.image-container img:hover + .text-9,
+.image-container img:hover + .text-10,
+.image-container img:hover + .text-11 {
+    opacity: 1;
+    color: white;
+}
+
+
+.image-container img {
+    min-width: 30%;
+    max-width: 40%;
+    min-height: 100px;
+    max-height: 600px;
+    object-fit: content;
+    flex: 1;
+    transition: filter 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+
+.image-container img:hover {
+    filter: brightness(20%) grayscale(100%);
+    transform: rotate(360deg);
+}
+
+
+/*! FOOTER */
+
+.footer{
+    /* max-width: 100vw; */
+    width: 100vw;
+    line-height: 1.5rem;
+    max-height: 500px;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    padding:2rem;
+    flex-wrap: wrap;
+
+}
+.image-footer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(./images/chocolate-cake-2872128_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: grayscale(100%) brightness(20%);
+    flex: 1;
+
+}
+.footer_container-1{
+    display: flex;
+    justify-content: space-around;
+    filter: brightness(90%);
+    margin-top: 2rem;
+    flex: 1;
+    
+}
+.f-c{
+    flex: 1;
+}
+.footer-container-1{
+    align-self: center;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 2rem;
+    padding: 1rem;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    flex: 2;
+}
+
+.footer-container-1 i{
+    margin-left: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.footer-container-2{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.footer-container-2 h4{
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    filter: brightness(100%);
+}
+.footer-2-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+}
+.footer-2-nav a{
+    text-decoration: none;
+    color: white;
+    align-self: flex-start;
+    font-size: 1.3rem;
+    filter: brightness(60%);
+}
+.footer-container-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+.footer-container-3 p{
+    filter: brightness(60%);
+    
+}
+.footer-container-3 h4{
+    font-size: 1.8rem;
+
+}
+
+.footer-iletişim{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-iletişim div{
+    display: flex;
+    align-items: first baseline;
+    gap: 10px;
+}
+
+.footer_container-2{
+    filter: brightness(60%);
+    padding-left: 3rem;
+}
+
+
